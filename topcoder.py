@@ -74,9 +74,19 @@ class Match(object):
 
 
 class TopCoder(object):
+    """
+    Fetches all the matches a coder has participated in.
+    """
+
     BASE_URL = "http://community.topcoder.com/tc?module=BasicData&"
 
     def __init__(self, handle):
+        """
+        Uncomment the "getAlgoFeeds" and "getCoders" methods to
+        fetch all the data from topcoder website. It creates a copy
+        on the disk before processing
+        """
+
         #self.getAlgoFeeds()
         #self.getCoders()
         self.matches = []
